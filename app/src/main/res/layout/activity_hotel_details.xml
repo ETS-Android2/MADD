@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HotelDetails">
+
+    <ImageView
+        android:id="@+id/dt_hotel_profile_image"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bg" />
+
+    <ImageView
+        android:id="@+id/btnHotelBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@color/cardview_shadow_end_color" />
+
+    <TextView
+        android:id="@+id/dt_hotel_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/roboto_medium"
+        android:textColor="@android:color/background_dark"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dt_hotel_profile_image" />
+
+    <TextView
+        android:id="@+id/dt_hotel_mobile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:fontFamily="@font/roboto_medium"
+        android:textColor="@android:color/background_dark"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView4"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toTopOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/dt_hotel_star"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:fontFamily="@font/rubik"
+        android:text="4.5"
+        android:textSize="11sp"
+        app:layout_constraintEnd_toStartOf="@+id/dt_hotel_rating_bars"
+        app:layout_constraintTop_toBottomOf="@+id/dt_hotel_profile_image" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="Joined"
+        android:textColor="#044363"
+        app:layout_constraintStart_toStartOf="@+id/dt_hotel_name"
+        app:layout_constraintTop_toBottomOf="@+id/dt_hotel_name" />
+
+    <TextView
+        android:id="@+id/dt_hotel_joined"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="2dp"
+        android:textColor="#363737"
+        app:layout_constraintStart_toEndOf="@+id/textView8"
+        app:layout_constraintTop_toBottomOf="@+id/dt_hotel_name" />
+
+
+    <ScrollView
+        android:id="@+id/SCROLLER_ID1"
+        android:layout_width="382dp"
+        android:layout_height="240dp"
+        android:layout_marginTop="4dp"
+        android:fillViewport="true"
+        android:scrollbars="vertical"
+        app:layout_constraintEnd_toEndOf="@+id/textView12"
+        app:layout_constraintStart_toStartOf="@+id/textView12"
+        app:layout_constraintTop_toBottomOf="@+id/textView12">
+
+        <TextView
+            android:id="@+id/dt_hotel_about"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"></TextView>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/dt_hotel_review"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/roboto_medium"
+        android:text=" Reviews"
+        android:textColor="@android:color/background_dark"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/dt_hotel_joined"
+        app:layout_constraintEnd_toEndOf="@+id/dt_hotel_rating_bars"
+        app:layout_constraintTop_toBottomOf="@+id/dt_hotel_rating_bars" />
+
+    <ImageButton
+        android:id="@+id/btnHotelEdit"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="8dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/dt_hotel_name"
+        app:layout_constraintStart_toEndOf="@+id/dt_hotel_name"
+        app:layout_constraintTop_toTopOf="@+id/dt_hotel_name"
+        app:srcCompat="@drawable/icons8_edit_24" />
+
+    <ImageButton
+        android:id="@+id/btnHotelDelete"
+        android:layout_width="19dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/btnHotelEdit"
+        app:layout_constraintStart_toEndOf="@+id/btnHotelEdit"
+        app:layout_constraintTop_toTopOf="@+id/btnHotelEdit"
+        app:srcCompat="@drawable/icons8_delete_bin_24"/>
+
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="383dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="About"
+        android:textColor="@android:color/background_dark"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/textView26"
+        app:layout_constraintTop_toBottomOf="@+id/textView26" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="Contact"
+        android:textColor="@android:color/background_dark"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="Location"
+        android:textColor="@android:color/background_dark"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/dt_hotel_place"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:fontFamily="@font/roboto_medium"
+        android:textColor="@android:color/background_dark"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView26"
+        app:layout_constraintStart_toEndOf="@+id/textView26"
+        app:layout_constraintTop_toTopOf="@+id/textView26" />
+
+    <Button
+        android:id="@+id/hcallbtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/book_button_bg"
+        android:text="Contact This Hotel"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintBottom_toTopOf="@+id/include"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"  />
+
+
+
+    <RatingBar
+        android:id="@+id/dt_hotel_rating_bars"
+        style="@style/Widget.AppCompat.RatingBar.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/dt_hotel_star"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/dt_hotel_star" />
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/bottom_nav"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/h_back_btn"
+        style="@android:style/Widget.Material.Button.Borderless"
+        android:layout_width="35dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_arrow_back_24" />
+</androidx.constraintlayout.widget.ConstraintLayout>

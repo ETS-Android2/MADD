@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E8E8E8"
+    tools:context=".EditPlaces">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtInLayout"
+        android:layout_width="249dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="URL"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="@+id/txtInLayout3"
+        app:layout_constraintStart_toStartOf="@+id/txtInLayout3"
+        app:layout_constraintTop_toBottomOf="@+id/txtInLayout3" >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editURL"
+            android:layout_width="248dp"
+            android:layout_height="42dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="0dp"
+        android:layout_height="190dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/join_header_bg" />
+
+    <ImageButton
+        android:id="@+id/back_btn3"
+        style="@android:style/Widget.Material.Button.Borderless"
+        android:layout_width="35dp"
+        android:layout_height="31dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.042"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_baseline_arrow_back_24"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="0dp"
+        android:layout_height="190dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/join_bottom_bg" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtInLayout1"
+        android:layout_width="248dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="Place Name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView9">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editPlace"
+            android:layout_width="248dp"
+            android:layout_height="42dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtInLayout2"
+        android:layout_width="248dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Address"
+        app:layout_constraintEnd_toEndOf="@+id/txtInLayout1"
+        app:layout_constraintStart_toStartOf="@+id/txtInLayout1"
+        app:layout_constraintTop_toBottomOf="@+id/txtInLayout1" >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editPlaceLocation"
+            android:layout_width="248dp"
+            android:layout_height="42dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtInLayout3"
+        android:layout_width="249dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Description"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="@+id/txtInLayout2"
+        app:layout_constraintStart_toStartOf="@+id/txtInLayout2"
+        app:layout_constraintTop_toBottomOf="@+id/txtInLayout2" >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editPlaceAbout"
+            android:layout_width="248dp"
+            android:layout_height="42dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/updateSubmit"
+        android:layout_width="248dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="31dp"
+        android:background="@drawable/book_button_bg"
+        android:fontFamily="@font/rubik_medium"
+        android:text="Update"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtInLayout"
+        app:layout_constraintVertical_bias="0.695" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="84dp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="Edit Place"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView9" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
